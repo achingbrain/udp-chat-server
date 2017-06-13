@@ -1,0 +1,22 @@
+{
+  "name": "udp-chat-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "chat-server": "./bin/chat-server"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "standard": "^10.0.2"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
