@@ -29,6 +29,9 @@ module.exports = ({port = 48392, multicast = '230.185.192.108', ttl = 128, addre
 
   return (message) => {
     const data = JSON.stringify(message)
+      .replace(/[\u007f-\uffff]/g, (c) => '\\u' + ('0000' + c.charCodeAt(0).toString(16)).slice(-4))
+
+    console.info('sending', data)
 
     socket.send(data, 0, data.length, port, multicast)
   }
