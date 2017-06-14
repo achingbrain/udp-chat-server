@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "chat-server": "./bin/chat-server"
+    "chat-server": "./bin/chat-server.sh"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
